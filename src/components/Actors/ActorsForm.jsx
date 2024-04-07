@@ -57,7 +57,7 @@ const ActorsForm = ({ show, handleClose, actorSelected }) => {
                                 required 
                                 placeholder="First name" 
                                 value={actor.Firstname}
-                                onChange={e => editActor("firstName", e.target.value)}
+                                onChange={e => editActor("Firstname", e.target.value)}
                             />
                         </FloatingLabel>
                     </Col>
@@ -67,7 +67,7 @@ const ActorsForm = ({ show, handleClose, actorSelected }) => {
                                 required 
                                 placeholder="Last name" 
                                 value={actor.lastname}
-                                onChange={e => editActor("lastName", e.target.value)}
+                                onChange={e => editActor("lastname", e.target.value)}
                             />
                         </FloatingLabel>
                     </Col>
