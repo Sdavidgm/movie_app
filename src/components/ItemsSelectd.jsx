@@ -28,7 +28,7 @@ const ItemsSelect = ({ items, itemsSelected, setItemsSelected, isMultiple=true, 
         if(itemStructure) return itemStructure(item);
         return <>
             <Card.Img src={item.image} style={{objectFit: "cover"}} />
-            <Card.Body>{item.Firstname} {item.lastname}</Card.Body>
+            <Card.Body>{item.firstName} {item.lastName}</Card.Body>
         </>
     }
 
@@ -38,7 +38,7 @@ const ItemsSelect = ({ items, itemsSelected, setItemsSelected, isMultiple=true, 
             <Form.Select className="mb-3" onChange={e => e.target.value && selectItem(+e.target.value)}>
                 <option value="">Select an item</option>
                 {items.map(item => (
-                    <option value={item.id} key={item.id}>{item.name ? item.name : `${item.Firstname} ${item.lastname}`}</option>
+                    <option value={item.id} key={item.id}>{item.name ? item.name : `${item.firstName} ${item.lastName}`}</option>
                 ))}
             </Form.Select>
 

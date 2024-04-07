@@ -7,6 +7,7 @@ import DirectorsForm from '../components/Directors/DirectorForm';
 import EmptyImg from '../components/EmptyImg';
 import GenresModal from '../components/Genres/GenresModal';
 import ItemsSelect from '../components/ItemsSelect';
+import ItemsSelectd from '../components/ItemsSelectd'
 import { addMovieThunk, updateMovieThunk } from '../store/slices/movies.slice';
 import searchAndFormatMovie from '../utils/searchAndFormatMovie';
 
@@ -110,7 +111,7 @@ const MovieForm = () => {
                             Add Director
                         </Button>
                     </div>
-                    <ItemsSelect
+                    <ItemsSelectd
                         items={directors}
                         itemsSelected={movie.directors}
                         setItemsSelected={e => editMovie("directors", e)}
