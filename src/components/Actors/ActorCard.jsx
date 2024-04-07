@@ -7,7 +7,7 @@ import formatDate from '../../utils/formatDate';
 
 const ActorCard = ({ actor, selectActor, showOptions=true }) => {
 
-    const { id, image, firstName, lastName, nationality } = actor;
+    const { id, image, Firstname, lastname, nationality } = actor;
 
     const birthday = formatDate(actor.birthday);
 
@@ -18,7 +18,7 @@ const ActorCard = ({ actor, selectActor, showOptions=true }) => {
             <Card style={{height: "100%"}}>
                 <Card.Img variant="top" src={image} style={{ height: 300, objectFit: "cover" }} />
                 <Card.Body className="d-flex flex-column">
-                    <Card.Title>{firstName} {lastName}</Card.Title>
+                    <Card.Title>{Firstname} {lastname}</Card.Title>
                     <div className="flex-fill">
                         <div><b>birthday: </b>{birthday}</div>
                         <div><b>Nationality: </b>{nationality}</div>

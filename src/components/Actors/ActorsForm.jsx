@@ -5,7 +5,7 @@ import { addActor, addActorThunk, updateActorThunk } from '../../store/slices/ac
 import EmptyImg from '../EmptyImg';
 import ModalForm from '../ModalForm';
 
-const defaultActor = { firstName: "", lastName: "", birthday: "", nationality: "", image: "" }
+const defaultActor = { Firstname: "", lastname: "", birthday: "", nationality: "", image: "" }
 
 const ActorsForm = ({ show, handleClose, actorSelected }) => {
 
@@ -56,7 +56,7 @@ const ActorsForm = ({ show, handleClose, actorSelected }) => {
                             <Form.Control
                                 required 
                                 placeholder="First name" 
-                                value={actor.firstName}
+                                value={actor.Firstname}
                                 onChange={e => editActor("firstName", e.target.value)}
                             />
                         </FloatingLabel>
@@ -66,7 +66,7 @@ const ActorsForm = ({ show, handleClose, actorSelected }) => {
                             <Form.Control
                                 required 
                                 placeholder="Last name" 
-                                value={actor.lastName}
+                                value={actor.lastname}
                                 onChange={e => editActor("lastName", e.target.value)}
                             />
                         </FloatingLabel>
